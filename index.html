@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+        integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <main>
+        <input type="checkbox" id="check">
+        <label for="check">
+            <div class="menu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </label>
+        <div class="container">            
+            <div class="main__aside">
+                <div class="main__profile">
+                    <div class="main__img wow animate__animated animate__jackInTheBox ">
+                        <img src="img/main-img1.png" alt="img">
+                    </div>
+                    <div class="main__name wow animate__animated animate__backInLeft" data-wow-delay="0.2s">
+                        Мирбек Матозимов
+                    </div>
+                </div>
+                <ul class="main__aside-ul">
+                    <li class=" wow animate__animated animate__backInLeft" data-wow-delay="0.3s"><a href="#">Главная</a>
+                    </li>
+                    <li class=" wow animate__animated animate__backInLeft" data-wow-delay="0.4s"><a href="#">Обо мне</a>
+                    </li>
+                    <li class=" wow animate__animated animate__backInLeft" data-wow-delay="0.5s"><a href="#">Услуги</a>
+                    </li>
+                    <li class=" wow animate__animated animate__backInLeft" data-wow-delay="0.6s"><a href="#"
+                            class="item-portfolio">Портфолио</a></li>
+                    <li class=" wow animate__animated animate__backInLeft" data-wow-delay="0.7s"><a
+                            href="#">Контакты</a></li>
+                </ul>
+                <div class="main__social-sites">
+                    <a class="wow animate__animated animate__jackInTheBox"
+                        href="https://www.instagram.com/mirbek.25.52/?hl=ru"><img src="img/instagram.png" alt=""></a>
+                    <a class="wow animate__animated animate__jackInTheBox" data-wow-delay="0.2s" href="https://vk.com/id539002306"> <img
+                            src="img/vk-aside.png" alt=""></a>
+                </div> 
+            </div>
+            <div class="main__slider">
+                <div class="main__slider-item home" id="home">
+                    <div class="main__slider-top">
+                        <h2 class="main__slider-title wow animate__animated animate__fadeInLeft">
+                            Digital услуги для бизнеса
+                        </h2>
+                        <div class="main__slider-subtitle wow animate__animated animate__fadeInLeft">
+                            Создаю продуманные, функциональные <br>
+                            и эмоциональные сайты по приятной цене
+                        </div>
+                        
+                    </div>
+                    <div class="main__slider-content">
+                        <h3 class="main__slider-question main__slider-title wow animate__animated
+                            animate__fadeInLeft" data-wow-delay="0.2s">
+                            Какой сайт вам нужен?
+                        </h3>
+                        <div class="main__slider-choice choice">
+                            <div class="choice-item  wow animate__animated animate__fadeIn"
+                                data-wow-delay="0.1s" style=" background-image: url(img/landing-bg.jpg);">
+                                <div class="choice-item__inner" href="javascript:;" data-fancybox
+                                    data-src="#modal-window">
+                                    <div class="choice-item__name">
+                                        Лендинг
+                                        <form id="modal-window" action="telegram.php" method="POST">
+                                            <h3>Лендинг page</h3>
+                                            <p>
+                                                Любая страница которая призывает пользователя
+                                                что то сделать. Например: подписаться на ссылку,
+                                                купить билет на конференцию итд, одним словом
+                                                сделать так чтобы у вас купили какой то товар
+                                            </p>
+                                            <legend>Отправьте запрос и я обязательно свяжусь с вами</legend>
+                                            <label for="form-name">Имя</label>
+                                            <input type="text" id="form-name" class="form-control" name="name">
+                                            <label for="form-number">Номер</label>
+                                            <input type="number" class="form-control" name="phone">
+                                            <label for="form-name">Сообщение</label>
+                                            <textarea name="msg"></textarea>
+                                            <button type="submit" class="btn">Отправить мне</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="choice-item  wow animate__animated animate__fadeIn" data-wow-delay="0.2s"
+                                style="background-image: url(img/promo-bg.jpg);">
+                                <div class="choice-item__inner" href="javascript:;" data-fancybox
+                                    data-src="#modal-window-promo">
+                                    <div class="choice-item__name">
+                                        Промо-сайт
+                                        <form id="modal-window-promo" action="telegram.php" method="POST">
+                                            <h3>Промо сайт</h3>
+                                            <p>
+                                                Это страница, созданная в интернете специально для
+                                                продвижения товаров, брендов либо услуг, и того, чтобы подтолкнуть
+                                                покупаамоимтимтимти в большей мере
+                                                являет собой буклет со списком предлагаемых фирмой товаров.
+                                            </p>
+                                            <legend>Отправьте запрос и я обязательно свяжусь с вами</legend>
+                                            <label for="form-name">Имя</label>
+                                            <input type="text" id="form-name" class="form-control" name="name">
+                                            <label for="form-number">Номер</label>
+                                            <input type="number" class="form-control" name="phone">
+                                            <label for="form-name">Сообщение</label>
+                                            <textarea name="msg"></textarea>
+                                            <button type="submit" class="btn">Отправить мне</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="choice-item  wow animate__animated animate__fadeIn" data-wow-delay="0.3s"
+                                style="background-image: url(img/multipage-bg.jpg);">
+                                <div class="choice-item__inner" href="javascript:;" data-fancybox
+                                    data-src="#modal-window-multipage">
+                                    <div class="choice-item__name">
+                                        Многостраничный
+                                        <form id="modal-window-multipage" action="telegram.php" method="POST">
+                                            <h3>Многостраничный</h3>
+                                            <p>
+                                                Сайт у которого много различных сраниц для отображения
+                                            </p>
+                                            <legend>Отправьте запрос и я обязательно свяжусь с вами</legend>
+                                            <label for="form-name">Имя</label>
+                                            <input type="text" id="form-name" class="form-control" name="name">
+                                            <label for="form-number">Номер</label>
+                                            <input type="number" class="form-control" name="phone">
+                                            <label for="form-name">Сообщение</label>
+                                            <textarea name="msg"></textarea>
+                                            <button type="submit" class="btn">Отправить мне</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="choice-item  wow animate__animated animate__fadeIn" data-wow-delay="0.4s"
+                                style="background-image: url(img/corporate-bg.jpg);">
+                                <div class="choice-item__inner" href="javascript:;" data-fancybox
+                                    data-src="#modal-window-corporate">
+                                    <div class="choice-item__name">
+                                        Корпоративный
+                                        <form id="modal-window-corporate" action="telegram.php" method="POST">
+                                            <h3>Корпоративный</h3>
+                                            <p>
+                                                Сайт компании, ее официальное виртуальное представительство в интернете
+                                            </p>
+                                            <legend>Отправьте запрос и я обязательно свяжусь с вами</legend>
+                                            <label for="form-name">Имя</label>
+                                            <input type="text" id="form-name" class="form-control" name="name">
+                                            <label for="form-number">Номер</label>
+                                            <input type="number" class="form-control" name="phone">
+                                            <label for="form-name">Сообщение</label>
+                                            <textarea name="msg"></textarea>
+                                            <button type="submit" class="btn">Отправить мне</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__slider-content">
+                        <h3 class="main__slider-question  main__slider-title wow animate__animated
+                            animate__fadeInLeft" data-wow-delay="0.3s">
+                            Какой дизайн вам нужен?
+                        </h3>
+                        <div class="main__slider-choice choice">
+                            <div class="choice-item  wow animate__animated animate__fadeIn" data-wow-delay="0.1s"
+                                style="background-image: url(img/design-bg.jpg);">
+                                <div class="choice-item__inner" href="javascript:;" data-fancybox
+                                    data-src="#modal-window-webdesign">
+                                    <div class="choice-item__name">
+                                        Дизайн сайтов
+                                        <form id="modal-window-webdesign" action="telegram.php" method="POST">
+                                            <h3>Дизайн сайтов</h3>
+                                            <p>
+                                                Внешний интерфейс вашего сайт должен быть современным и привлекательным, очень доступным и понятным
+                                            </p>
+                                            <legend>Отправьте запрос и я обязательно свяжусь с вами</legend>
+                                            <label for="form-name">Имя</label>
+                                            <input type="text" id="form-name" class="form-control" name="name">
+                                            <label for="form-number">Номер</label>
+                                            <input type="number" class="form-control" name="phone">
+                                            <label for="form-name">Сообщение</label>
+                                            <textarea name="msg"></textarea>
+                                            <button type="submit" id="form-btn" class="btn">Отправить мне</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="choice-item identica wow animate__animated animate__fadeIn" data-wow-delay="0.2s"
+                                style="background-image: url(img/identica-bg.jpg);">
+                                <div class="choice-item__inner" href="javascript:;" data-fancybox
+                                    data-src="#modal-window-identica">
+                                    <div class="choice-item__name">
+                                        Фирменный стиль
+                                        <form id="modal-window-identica" action="telegram.php" method="POST">
+                                            <h3>Фирменный стиль</h3>
+                                            <p>
+                                                Дизайн вашего бреда от а до я, логотип, дизайн упаковки,этикетки,визитки
+                                            </p>
+                                            <legend>Отправьте запрос и я обязательно свяжусь с вами</legend>
+                                            <label for="form-name">Имя</label>
+                                            <input type="text" id="form-name" class="form-control" name="name">
+                                            <label for="form-number">Номер</label>
+                                            <input type="number" class="form-control" name="phone">
+                                            <label for="form-name">Сообщение</label>
+                                            <textarea name="msg"></textarea>
+                                            <button type="submit" class="btn">Отправить мне</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__slider-item about" id="about">
+                    <div class="about__top">
+                        <h2>Привет</h2>
+                        <div>Меня зовут Мирбек, мне 19 лет</div>
+                    </div>
+                    <div class="about__slider">
+                        <div class="about__slider-item">
+                            <div class="about__slider-img">
+                                <img src="img/aboutImg1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="about__slider-item">
+                            <div class="about__slider-img">
+                                <img src="img/aboutImg2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="about__slider-item">
+                            <div class="about__slider-img">
+                                <img src="img/aboutImg3.png" alt="">
+                            </div>
+                        </div>
+                        <div class="about__slider-item">
+                            <div class="about__slider-img">
+                                <img src="img/aboutImg4.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about__info">
+                        <div class="about__info-row">
+                            <div class="about__info-col col-1">
+                                <div class="col__item">
+                                    <h3 class="col__item-title">Обо мне</h3>
+                                    <p>Живу в Кыргызстане, г. Бишкек. Занимаюсь веб разработкой с <span>09.2019.</span> В свободное время также верстаю сайты, делаю дизайны
+                                    сайтов и учу что то новое, новые стандарты</p>
+                                </div>
+                                <div class="col__item">
+                                    <h3 class="col__item-title wow animate__animated animate__fadeInLeft">Хобби</h3>
+                                    <p>А также я очень люблю читать книги по саморазвитию: <i>тонкое исскуство пофигизма, мир души, кто сьел мой сыр, триллионер
+                                    думает/слушает/действует.</i>Очень рекомендую.</p>
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;Еще я играю в настольный теннис, и в своей школе был #1 по теннису, а в области наша команда заняла #3. Хорошие были
+                                    школьные годы, ведь именно в школе я получил базу программирования.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="about__info-col col-2">
+                                <div class="col__item">
+                                    <h3 class="col__item-title">Знания</h3>
+                                    <div class="col__item-row">
+                                        <div class="name">HTML</div>
+                                        <div class="line-1"></div>
+                                        <div class="percent">90%</div>
+                                    </div>
+                                    <div class="col__item-row">
+                                        <div class="name">SCSS</div>
+                                        <div class="line-2"></div>
+                                        <div class="percent">95%</div>
+                                    </div>
+                                    <div class="col__item-row">
+                                        <div class="name">JS / jQuery</div>
+                                        <div class="line-3"></div>
+                                        <div class="percent">45%</div>
+                                    </div>
+                                    <div class="col__item-row">
+                                        <div class="name">Photoshop</div>
+                                        <div class="line-4"></div>
+                                        <div class="percent">85%</div>
+                                    </div>
+                                    <div class="col__item-row">
+                                        <div class="name">Figma / XD</div>
+                                        <div class="line-5"></div>
+                                        <div class="percent">98%</div>
+                                    </div>
+                                    <div class="col__item-row">
+                                        <div class="name">Wordpress</div>
+                                        <div class="line-6"></div>
+                                        <div class="percent">45%</div>
+                                    </div>
+                                    <div class="col__item-text">а также аналоги этих инструментов</div>
+                                </div>
+                                <div class="col__item  wow animate__animated animate__fadeInLeft">
+                                    <h3 class="col__item-title">Школа и университет</h3>
+                                    <p>В школе учился хорошо, именно в школе начал интересоваться программированием а именно 
+                                        С++ но только основы, но думал что мне пока рано, сейчас смотрю назад и так жалею что 
+                                        не занимался этим ответсвенно с ранних лет, также мне по душе были: английский язык и математика.
+                                        После окончания школы я поступил в технический, на факультет "Телематика",
+                                        но учеба в универе была сложная и занимала все свободное время, и тогда я начал задумываться 
+                                        о веб разработке. Начал ходить на курсы веб дизайна и успешно освоил. Сейчас я на третьем курсе но 
+                                        больше внимания я уделяю верстке и саморазвитию нежели учебе. И это понемногу приносит плоды) 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about__info-row content-row wow animate__animated animate__fadeInLeft">
+                            <h3>Мои качества</h3>
+                            <div class="about__info-content">
+                                <div class="content__column">
+                                    <div class="content__column-title">Мои 3 плюсы:</div>
+                                    <div class="content__column-items">
+                                        <div class="content__column-item">
+                                            <img src="img/c1.png" alt="">
+                                            <div class="content__column-text">
+                                                Упорство 
+                                            </div>
+                                        </div>
+                                        <div class="content__column-item">
+                                            <img src="img/c2.png" alt="">
+                                            <div class="content__column-text">
+                                                Организованность
+                                            </div>
+                                        </div>
+                                        <div class="content__column-item">
+                                            <img src="img/c3.png" alt="">
+                                            <div class="content__column-text">
+                                                Анализирование
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content__column">
+                                    <div class="content__column-title">Мои 3 минусы:</div>
+                                    <div class="content__column-items">
+                                        <div class="content__column-item">
+                                            <img src="img/c4.png" alt="">
+                                            <div class="content__column-text">
+                                                Нерешительность
+                                            </div>
+                                        </div>
+                                        <div class="content__column-item">
+                                            <img src="img/c5.png" alt="">
+                                            <div class="content__column-text">
+                                                Неразговорчивость
+                                            </div>
+                                        </div>
+                                        <div class="content__column-item">
+                                            <img src="img/c6.png" alt="">
+                                            <div class="content__column-text">
+                                                Возможно лень
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+                <div class="main__slider-item services">
+                    <h2>Что я предлагаю?</h2>
+                    <div class="serv__list">
+                        <div class="serv__row">
+                            <h3 class="serv-row__title">
+                                <span>01</span> Современный и адаптивный <span id="site">сайт</span>
+                            </h3>
+                            <ul>
+                                <li>Сайт любой сложности: корпоративный, многостраничный, лендинг или интернет магазин.</li>
+                                <li>Полностью адаптивный и отвечающий на все требования сайт</li>
+                                <li>Сайт под ключ (полностью от А до Я)</li>
+                                <li>Посадка на cms Wordpress (т.е у вас будет админ панель)</li>
+                                <li>Мобильное приложение</li>
+                            </ul>
+                        </div>
+                        <div class="serv__row">
+                            <h3 class="serv-row__title">
+                                <span>02</span> Веб дизайн
+                            </h3>
+                            <ul>
+                                <li>Дизайн вашего будущего сайта</li>
+                                <li>Дизайн мобильного приложения</li>
+                                <li>Редизайн вашего сайта</li>
+                            </ul>
+                        </div>
+                        <div class="serv__row">
+                            <h3 class="serv-row__title">
+                                <span>03</span> Фирменный стиль айдентика
+                            </h3>
+                            <ul>
+                                <li>Современный логотип</li>
+                                <li>Айдентика вашего бизнеса</li>
+                                <li>Дизайн упаковки/этикетки</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="serv__why">
+                        <h2 class="serv__titles">Почему я?</h2>
+                        <div class="serv__why-items">
+                            <div class="serv__why-item">
+                                <div class="serv__why-img">
+                                    <img src="img/whyMe1.png" alt="">
+                                </div>
+                                <div class="serv__why-title">
+                                    Современный дизайн
+                                </div>
+                                <div class="serv__why-text">
+                                    Пока у конкурентов сайт из начала 2000, ваш сайт прямиком из 2020
+                                </div>
+                            </div>
+                            <div class="serv__why-item">
+                                <div class="serv__why-img">
+                                    <img src="img/whyMe2.png" alt="">
+                                </div>
+                                <div class="serv__why-title">
+                                    Консультация и обучение
+                                </div>
+                                <div class="serv__why-text">
+                                    Помогу с любым вопросом, научу работать с сайтом чтобы легко менять информацию и принимать заявки.
+                                </div>
+                            </div>
+                            <div class="serv__why-item">
+                                <div class="serv__why-img">
+                                    <img src="img/whyMe3.png" alt="">
+                                </div>
+                                <div class="serv__why-title">
+                                    Быстрые сроки
+                                </div>
+                                <div class="serv__why-text">
+                                    Разработка первого варианта сайта занимает примерно 7-12 дней. Никогда не срываем сроки
+                                </div>
+                            </div>
+                            <div class="serv__why-item">
+                                <div class="serv__why-img">
+                                    <img src="img/whyMe4.png" alt="">
+                                </div>
+                                <div class="serv__why-title">
+                                    Прямой исполнитель
+                                </div>
+                                <div class="serv__why-text">
+                                    Я работаю без посредников
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="serv__structure">
+                        <h2 class="serv__titles">Структура работы</h2>
+                        <div class="serv__slider">
+                            <div class="serv__slider-item">
+                                <div class="serv__slider-inner">
+                                    <div class="serv__slider-img">
+                                        <img src="img/servSliderImg1.png" alt="">
+                                    </div>
+                                    <div class="serv__slider-title">
+                                        1. Бриф
+                                    </div>
+                                    <div class="serv__slider-text">
+                                        Создание технического задания, выявление желаний для лучшего результата.
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="serv__slider-item">
+                                <div class="serv__slider-inner">
+                                    <div class="serv__slider-img">
+                                        <img src="img/servSliderImg2.png" alt="">
+                                    </div>
+                                    <div class="serv__slider-title">
+                                        2. Предоплата
+                                    </div>
+                                    <div class="serv__slider-text">
+                                        Любая удобная оплата
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="serv__slider-item">
+                                <div class="serv__slider-inner">
+                                    <div class="serv__slider-img">
+                                        <img src="img/servSliderImg3.png" alt="">
+                                    </div>
+                                    <div class="serv__slider-title">
+                                        3. Разработка
+                                    </div>
+                                    <div class="serv__slider-text">
+                                        Создание первого варианта сайта на основе технического задания. Срок создание обычно состовляет 7 дней.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="serv__slider-item">
+                                <div class="serv__slider-inner">
+                                    <div class="serv__slider-img">
+                                        <img src="img/servSliderImg4.png" alt="">
+                                    </div>
+                                    <div class="serv__slider-title">
+                                        4. Правки
+                                    </div>
+                                    <div class="serv__slider-text">
+                                        Присылаем ссылку и демонстрируем сайт. Исправляем замечания.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="serv__slider-item">
+                                <div class="serv__slider-inner">
+                                    <div class="serv__slider-img">
+                                        <img src="img/servSliderImg2.png" alt="">
+                                    </div>
+                                    <div class="serv__slider-title">
+                                        5. Пост оплата
+                                    </div>
+                                    <div class="serv__slider-text">
+                                        Последняя часть оплаты.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="serv__slider-item">
+                                <div class="serv__slider-inner">
+                                    <div class="serv__slider-img">
+                                        <img src="img/servSliderImg6.png" alt="">
+                                    </div>
+                                    <div class="serv__slider-title">
+                                        6. Перенос сайта
+                                    </div>
+                                    <div class="serv__slider-text">
+                                        Перенос вашего сайта на хостинг и домен. Если хостинг отсутсвует помогу подобрать подходящий.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="serv__slider-item">
+                                <div class="serv__slider-inner">
+                                    <div class="serv__slider-img">
+                                        <img src="img/servSliderImg7.png" alt="">
+                                    </div>
+                                    <div class="serv__slider-title">
+                                        Готово
+                                    </div>
+                                    <div class="serv__slider-text">
+                                        Сайт полностью готов. Я помогу изучить все тонкости управления админ панелью для лучших результатов.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__slider-item portfolio">
+                    <h2>Мои работы скажут за меня</h2>
+                    <div class="tabs">
+                        <ul class="tabs__caption">
+                            <li class="active">Сайты</li>
+                            <li>Мобильные приложения</li>
+                        </ul>
+                        <div class="tabs__content active">
+                            <p class="imglist">
+                                <a href="img/tabs/img1.jpg" data-fancybox
+                                    data-caption="&lt;b&gt;Single photo&lt;/b&gt;&lt;br /&gt;Caption can contain &lt;em&gt;any&lt;/em&gt; HTML elements">
+                                    <img src="img/tabs/250x250/img1.jpg" />
+                                </a>
+                            
+                                <a href="img/tabs/img2.jpg" data-fancybox data-caption="This image has a simple caption">
+                                    <img src="img/tabs/250x250/img2.jpg" />
+                                </a>
+                                
+                                <a href="img/tabs/img3.jpg" data-fancybox>
+                                    <img src="img/tabs/250x250/img3.jpg" />
+                                </a>
+                                <a href="img/tabs/img4.jpg" data-fancybox
+                                    data-caption="&lt;b&gt;Single photo&lt;/b&gt;&lt;br /&gt;Caption can contain &lt;em&gt;any&lt;/em&gt; HTML elements">
+                                    <img src="img/tabs/250x250/img4.jpg" />
+                                </a>
+                            
+                                <a href="img/tabs/img5.jpg" data-fancybox
+                                    data-caption="&lt;b&gt;Single photo&lt;/b&gt;&lt;br /&gt;Caption can contain &lt;em&gt;any&lt;/em&gt; HTML elements">
+                                    <img src="img/tabs/250x250/img5.jpg" />
+                                </a>
+                            
+                                <a href="img/tabs/img6.jpg" data-fancybox
+                                    data-caption="&lt;b&gt;Single photo&lt;/b&gt;&lt;br /&gt;Caption can contain &lt;em&gt;any&lt;/em&gt; HTML elements">
+                                    <img src="img/tabs/250x250/img6.jpg" />
+                                </a>
+                            </p>
+                        </div>
+                        <div class="tabs__content">
+                            <p class="imglist">
+                                <a href="img/tabs/blank.jpg" data-fancybox
+                                    data-caption="&lt;b&gt;Single photo&lt;/b&gt;&lt;br /&gt;Caption can contain &lt;em&gt;any&lt;/em&gt; HTML elements">
+                                    <img src="img/tabs/250x250/blank.jpg" />
+                                </a>
+                                
+                                <a href="img/tabs/blank.jpg" data-fancybox
+                                    data-caption="&lt;b&gt;Single photo&lt;/b&gt;&lt;br /&gt;Caption can contain &lt;em&gt;any&lt;/em&gt; HTML elements">
+                                    <img src="img/tabs/250x250/blank.jpg" />
+                                </a>
+                                
+                                <a href="img/tabs/blank.jpg" data-fancybox
+                                    data-caption="&lt;b&gt;Single photo&lt;/b&gt;&lt;br /&gt;Caption can contain &lt;em&gt;any&lt;/em&gt; HTML elements">
+                                    <img src="img/tabs/250x250/blank.jpg" />
+                                </a>
+                                <a href="img/tabs/blank.jpg" data-fancybox
+                                    data-caption="&lt;b&gt;Single photo&lt;/b&gt;&lt;br /&gt;Caption can contain &lt;em&gt;any&lt;/em&gt; HTML elements">
+                                    <img src="img/tabs/250x250/blank.jpg" />
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tabs__design">
+                        <div class="tabs__design-name">Дизайн</div>
+                            <p class="imglist">
+                                <a href="img/tabs/img1.jpg" data-fancybox
+                                    data-caption="&lt;b&gt;Single photo&lt;/b&gt;&lt;br /&gt;Caption can contain &lt;em&gt;any&lt;/em&gt; HTML elements">
+                                    <img src="img/tabs/250x250/img1.jpg" />
+                                </a>
+                            
+                                <a href="img/tabs/img2.jpg" data-fancybox
+                                    data-caption="This image has a simple caption">
+                                    <img src="img/tabs/250x250/img2.jpg" />
+                                </a>
+                            
+                                <a href="img/tabs/img3.jpg" data-fancybox>
+                                    <img src="img/tabs/250x250/img3.jpg" />
+                                </a>
+                                <a href="img/tabs/img4.jpg" data-fancybox
+                                    data-caption="&lt;b&gt;Single photo&lt;/b&gt;&lt;br /&gt;Caption can contain &lt;em&gt;any&lt;/em&gt; HTML elements">
+                                    <img src="img/tabs/250x250/img4.jpg" />
+                                </a>
+                            </p>
+                    </div>
+                </div>
+                <div class="main__slider-item feedback">
+                    <h2>Как со мной связаться</h2>
+                    <div class="contacts">
+                        <div class="contacts__social">
+                            <a href="https://wa.me/996507250801"><img src="img/wa.png" alt=""></a>
+                            <a href="https://www.facebook.com/profile.php?id=100022354652863"><img src="img/fb.png"
+                                    alt=""></a>
+                            <a href="https://vk.com/id539002306"><img src="img/vk.png" alt=""></a>
+                        </div>
+                        <div class="contacts__main">
+                            <div class="contacts__main-phone">+996 507 25 08 01</div>
+                            <div class="contacts__main-mail">mirbek.25.52@gmail.com</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script> new WOW().init(); </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
